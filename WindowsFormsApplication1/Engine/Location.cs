@@ -13,7 +13,7 @@ namespace Engine
         public string Description { set; get; }
 
         public Item ItemRequiredToEnter { set; get; }
-        public Quest QuestAvaliableHere { set; get; }
+        public Quest QuestAvailableHere { set; get; }
         public Monster MonsterLivingHere { set; get; }
         public Location LocationToNorth { set; get; }
         public Location LocationToEast { set; get; }
@@ -23,14 +23,14 @@ namespace Engine
 
         public Location(int id, string name, string description,
             Item itemRequiredToEnter = null,
-            Quest questAvaliableHere = null,
+            Quest questAvailableHere = null,
             Monster monsterLivingHere = null)
         {
             ID = id;
             Name = name;
             Description = description;
             ItemRequiredToEnter = itemRequiredToEnter;
-            QuestAvaliableHere = questAvaliableHere;
+            QuestAvailableHere = questAvailableHere;
             MonsterLivingHere = monsterLivingHere;
         }
     }
