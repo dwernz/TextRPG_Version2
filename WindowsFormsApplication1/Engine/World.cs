@@ -1011,11 +1011,27 @@ namespace Engine
             Spell icebolt = new Spell(SPELL_ID_ICEBOLT, "Icebolt", 5, 10, "Ice");
             Spell lightningbolt = new Spell(SPELL_ID_LIGHTNINGBOLT, "Lightningbolt", 5, 10, "Lightning");
             Spell rockBullet = new Spell(SPELL_ID_ROCK_BULLET, "Rock Bullet", 5, 10, "Earth");
+            Spell fireball = new Spell(SPELL_ID_FIREBALL, "Fireball", 100, 500, "Fire");
+            Spell iceSpear = new Spell(SPELL_ID_ICE_SPEAR, "Ice Spear", 100, 500, "Ice");
+            Spell thunder = new Spell(SPELL_ID_THUNDER, "Thunder", 100, 500, "Lightning");
+            Spell golemsStrike = new Spell(SPELL_ID_GOLEMS_STRIKE, "Golem's Strike", 100, 500, "Earth");
+            Spell meteor = new Spell(SPELL_ID_METEOR, "Meteor", 1000, 2000, "Fire");
+            Spell hailStorm = new Spell(SPELL_ID_HAIL_STORM, "Hail Storm", 1000, 2000, "Ice");
+            Spell lightningRod = new Spell(SPELL_ID_LIGHTNING_ROD, "Lightning Rod", 1000, 2000, "Lightning");
+            Spell gravityCrush = new Spell(SPELL_ID_GRAVITY_CRUSH, "Gravity Crush", 1000, 2000, "Earth");
 
             Spells.Add(firebolt);
             Spells.Add(icebolt);
             Spells.Add(lightningbolt);
             Spells.Add(rockBullet);
+            Spells.Add(fireball);
+            Spells.Add(iceSpear);
+            Spells.Add(thunder);
+            Spells.Add(golemsStrike);
+            Spells.Add(meteor);
+            Spells.Add(hailStorm);
+            Spells.Add(lightningRod);
+            Spells.Add(gravityCrush);
         }
 
         // ItemByID function
@@ -1070,5 +1086,18 @@ namespace Engine
 
             return null;
         } // End LocationByID function
+
+        public static Spell SpellByID(int id)
+        {
+            foreach (Spell spell in Spells)
+            {
+                if(spell.ID == id)
+                {
+                    return spell;
+                }
+            }
+
+            return null;
+        }
     }
 }
