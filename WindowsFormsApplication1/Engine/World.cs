@@ -284,6 +284,11 @@ namespace Engine
             Items.Add(new Armor(ITEM_ID_LEATHER_PANTS, "Leather Pants", "Leather Pants", 3, 5, "Legs", 10));
             Items.Add(new Armor(ITEM_ID_LEATHER_GLOVES, "Leather Gloves", "Leather Gloves", 3, 5, "Hands", 10));
             Items.Add(new Armor(ITEM_ID_LEATHER_BOOTS, "Leather Boots", "Leather Boots", 2, 4, "Feet", 10));
+            Items.Add(new Armor(ITEM_ID_BRONZE_HELMET, "Bronze Helmet", "Bronze Helmets", 10, 15, "Head", 25));
+            Items.Add(new Armor(ITEM_ID_BRONZE_CHESTPLATE, "Bronze Chestplate", "Bronze Chestplates", 15, 20, "Chest", 25));
+            Items.Add(new Armor(ITEM_ID_BRONZE_LEGGINGS, "Bronze Leggings", "Bronze Leggings", 12, 15, "Legs", 25));
+            Items.Add(new Armor(ITEM_ID_BRONZE_BOOTS, "Bronze Boots", "Bronze Boots", 10, 15, "Feet", 25));
+            Items.Add(new Armor(ITEM_ID_BRONZE_GAUNTLETS, "Bronze Gauntlets", "Bronze Gauntlets", 12, 15, "Hands", 25));
         }
 
         private static void PopulateMonsters()
